@@ -1,0 +1,39 @@
+body{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "nav article adds"
+    "footer footer footer"
+    ;
+    grid-template-rows: 60px 1fr 60px ;  /* размер строки шаблона */
+    grid-template-columns: 20% 1fr 15% ; /* размер колонки  шаблона */
+    grid-gap: 10px; /*  отделение */
+    height: 100vh;
+    margin: 0;
+}
+
+#mainHeader{
+    grid-area:header;
+}
+#mainArticle{
+    grid-area:article;
+}
+#mainNav{
+    grid-area:nav;
+}
+#siteAdds{
+    grid-area:adds;
+}
+#pageFooter{
+    grid-area:footer;
+}
+
+header, article, nav, div, footer {
+     background-color: rgb(160, 160, 168);
+     padding: 20px;
+}
+
+.img {
+    height: 200px;
+    width: 100px;
+}
